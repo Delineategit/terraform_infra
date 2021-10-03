@@ -4,6 +4,10 @@ provider "aws" {
 }
  
 terraform {
-  backend "local" {}
+  backend "s3" {
+    bucket = "tf-state-file-moon"
+    key    = "terraform-tfstate/"
+    region = "ap-south-1"
+  }
 required_version = "~> 0.12.20"
 }
