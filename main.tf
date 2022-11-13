@@ -5,7 +5,7 @@ provider "aws" {
  
 terraform {
   backend "s3" {
-    bucket = "tf-state-file-moon"
+    bucket = "tfstatebucket-test"
     key    = "terraform-tfstate/"
     region = "ap-south-1"
   }
