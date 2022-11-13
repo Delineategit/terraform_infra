@@ -11,5 +11,7 @@ module "ubuntu" {
   #tags = 
  
     creator = var.creator
+    purpose = "testing"
+    owner = "shreya"
   
 }

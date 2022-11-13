@@ -29,7 +29,7 @@ data "aws_iam_policy_document" "instance-assume-role-policy" {
   }
 }
  
-resource "aws_iam_role" "instance39" {
+resource "aws_iam_role" "instance69" {
   name               = "instance_role"
   path               = "/system/"
   assume_role_policy = data.aws_iam_policy_document.instance-assume-role-policy.json
